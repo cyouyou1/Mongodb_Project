@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mongodb Project</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tweet_text">tweet_text</string>
+    <string name="profile_picture">profile_pic</string>
+    <string name="created_at">created_at</string>
+</resources>
