@@ -6,4 +6,14 @@
     <string name="tweet_text">tweet_text</string>
     <string name="profile_picture">profile_pic</string>
     <string name="created_at">created_at</string>
+
+
+    <string name="exit_option">Exit</string>
+    <string name="hiking_option">Hiking</string>
+    <string name="swim_option">Swimming</string>
+    <string name="reading_option">Reading</string>
+    <string name="search_option">Advanced Search</string>
+    <string name="map_option">Google Map</string>
+    <string name="maps_activity">Map</string>
+
 </resources>

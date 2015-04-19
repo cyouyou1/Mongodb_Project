@@ -1,6 +1,7 @@
 package com.example.mongodbproject;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.ConnectivityManager;
@@ -33,7 +34,7 @@ public class MainActivity extends ActionBarActivity {
 
 
     private static final String MONGOLAB_BASE_URL =
-            "https://api.mongolab.com/api/1/databases/project_db/collections/simple_tweets/?q={$text:{$search:%22mom%22}}&l=20&apiKey=zmTpDSixS5MN2Kb6txgHDM9GvxE5sksX";
+            "https://api.mongolab.com/api/1/databases/project_db/collections/simple_tweets/?q={$text:{$search:%22hiking%22}}&l=10&apiKey=zmTpDSixS5MN2Kb6txgHDM9GvxE5sksX";
 
 //    private final static String URL_API_KEY = "zmTpDSixS5MN2Kb6txgHDM9GvxE5sksX";
 
@@ -67,12 +68,20 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.search) {
             if (isOnline()) {
                 requestData(MONGOLAB_BASE_URL);
             }else {
                 Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
             }
+            return true;
+        }else if (id == R.id.exit_app ){
+            finish();
+            return true;
+        }else if (id == R.id.map ) {
+            Intent intent = new Intent(this, MapsActivity.class);
+            startActivity(intent);
+            return true;
         }
 
         return false;

@@ -1,6 +1,44 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
+
+
+
+
+    <item android:id="@+id/hiking"
+        android:title="@string/hiking_option"
+        android:orderInCategory="100"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/hiking"/>
+
+    <item android:id="@+id/swimming"
+        android:title="@string/swim_option"
+        android:orderInCategory="101"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/swimming"/>
+
+    <item android:id="@+id/reading"
+        android:title="@string/reading_option"
+        android:orderInCategory="102"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/reading"/>
+
+    <item android:id="@+id/search"
+        android:title="@string/search_option"
+        android:orderInCategory="103"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/search"/>
+
+    <item android:id="@+id/map"
+        android:title="@string/map_option"
+        android:icon="@drawable/map"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="104" />
+
+    <item android:id="@+id/exit_app"
+        android:title="@string/exit_option"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="105"
+        android:icon="@drawable/exit"/>
+
 </menu>
