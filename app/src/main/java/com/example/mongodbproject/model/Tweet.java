@@ -10,7 +10,9 @@ public class Tweet {
     private String profile_image_url;
     private String created_at;
     private Bitmap profile_pic;
-    //TODO generate getter setter to access profile_pic
+    private String user_screen_name;
+
+
 
     public String getTweet_text() {
         return tweet_text;
@@ -43,5 +45,13 @@ public class Tweet {
 
     public void setProfile_pic(Bitmap profile_pic) {
         this.profile_pic = profile_pic;
+    }
+
+    public String getUser_screen_name() {
+        return user_screen_name;
+    }
+
+    public void setUser_screen_name(String user_screen_name) {
+        this.user_screen_name = user_screen_name;
     }
 }

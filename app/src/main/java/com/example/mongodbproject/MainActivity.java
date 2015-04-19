@@ -32,7 +32,8 @@ public class MainActivity extends ActionBarActivity {
     List<MyTask> tasks;
     List<Tweet> tweetsList;
 
-
+    //only show the text field and limit to 10 docs
+//    https://api.mongolab.com/api/1/databases/project_db/collections/simple_tweets/?q={$text:{$search:%22reading%20book%22}}&f={%22tweet_text%22:1,%22_id%22:0}&l=10&apiKey=zmTpDSixS5MN2Kb6txgHDM9GvxE5sksX
     private static final String MONGOLAB_HIKING_URL =
             "https://api.mongolab.com/api/1/databases/project_db/collections/simple_tweets/?q={$text:{$search:%22hiking%22}}&l=10&apiKey=zmTpDSixS5MN2Kb6txgHDM9GvxE5sksX";
 

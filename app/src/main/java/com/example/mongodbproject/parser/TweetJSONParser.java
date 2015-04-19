@@ -25,6 +25,7 @@ public class TweetJSONParser {
 
                     tweet.setTweet_text(object.getString("tweet_text"));
                     tweet.setCreated_at(object.getString("created_at"));
+                    tweet.setUser_screen_name(object.getString("user_screen_name"));
                     tweet.setProfile_image_url(object.getString("profile_image_url"));
 
                     tweetsList.add(tweet);

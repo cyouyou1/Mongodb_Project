@@ -16,5 +16,6 @@
     <string name="search_option">Advanced Search</string>
     <string name="map_option">Google Map</string>
     <string name="maps_activity">Map</string>
+    <string name="user_screen_name_holder">user_screen_name</string>
 
 </resources>

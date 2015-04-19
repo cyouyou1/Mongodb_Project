@@ -36,6 +36,8 @@ public class TweetAdapter extends ArrayAdapter<Tweet> {
         tv1.setText(tweet.getTweet_text());
         TextView tv2 = (TextView) view.findViewById(R.id.textView2);
         tv2.setText(tweet.getCreated_at());
+        TextView tv3 = (TextView) view.findViewById(R.id.textView3);
+        tv3.setText(tweet.getUser_screen_name());
         ImageView image = (ImageView) view.findViewById(R.id.imageView1);
         image.setImageBitmap(tweet.getProfile_pic());
 
