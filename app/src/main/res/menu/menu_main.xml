@@ -11,6 +11,7 @@
         app:showAsAction="always|withText"
         android:icon="@drawable/hiking"/>
 
+
     <item android:id="@+id/swimming"
         android:title="@string/swim_option"
         android:orderInCategory="101"
