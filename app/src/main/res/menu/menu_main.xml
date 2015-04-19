@@ -11,17 +11,21 @@
         app:showAsAction="always|withText"
         android:icon="@drawable/hiking"/>
 
-
+    <item android:id="@+id/cooking"
+        android:title="@string/cooking_option"
+        android:orderInCategory="101"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/cooking"/>
 
     <item android:id="@+id/swimming"
-        android:title="@string/swim_option"
-        android:orderInCategory="101"
+        android:title="@string/swimming_option"
+        android:orderInCategory="102"
         app:showAsAction="always|withText"
         android:icon="@drawable/swimming"/>
 
     <item android:id="@+id/reading"
         android:title="@string/reading_option"
-        android:orderInCategory="102"
+        android:orderInCategory="103"
         app:showAsAction="always|withText"
         android:icon="@drawable/reading"/>
 

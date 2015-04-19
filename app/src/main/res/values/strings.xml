@@ -10,7 +10,8 @@
 
     <string name="exit_option">Exit</string>
     <string name="hiking_option">Hiking</string>
-    <string name="swim_option">Swimming</string>
+    <string name="cooking_option">Hiking</string>
+    <string name="swimming_option">Swimming</string>
     <string name="reading_option">Reading</string>
     <string name="search_option">Advanced Search</string>
     <string name="map_option">Google Map</string>

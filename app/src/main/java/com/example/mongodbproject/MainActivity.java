@@ -33,8 +33,17 @@ public class MainActivity extends ActionBarActivity {
     List<Tweet> tweetsList;
 
 
-    private static final String MONGOLAB_BASE_URL =
+    private static final String MONGOLAB_HIKING_URL =
             "https://api.mongolab.com/api/1/databases/project_db/collections/simple_tweets/?q={$text:{$search:%22hiking%22}}&l=10&apiKey=zmTpDSixS5MN2Kb6txgHDM9GvxE5sksX";
+
+    private static final String MONGOLAB_SWIMMING_URL =
+            "https://api.mongolab.com/api/1/databases/project_db/collections/simple_tweets/?q={$text:{$search:%22swimming%22}}&l=10&apiKey=zmTpDSixS5MN2Kb6txgHDM9GvxE5sksX";
+
+    private static final String MONGOLAB_READING_URL =
+            "https://api.mongolab.com/api/1/databases/project_db/collections/simple_tweets/?q={$text:{$search:%22book%22}}&l=10&apiKey=zmTpDSixS5MN2Kb6txgHDM9GvxE5sksX";
+
+    private static final String MONGOLAB_COOKING_URL =
+            "https://api.mongolab.com/api/1/databases/project_db/collections/simple_tweets/?q={$text:{$search:%22cook%22}}&l=10&apiKey=zmTpDSixS5MN2Kb6txgHDM9GvxE5sksX";
 
 //    private final static String URL_API_KEY = "zmTpDSixS5MN2Kb6txgHDM9GvxE5sksX";
 
@@ -68,14 +77,43 @@ public class MainActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.search) {
+        if (id == R.id.reading) {
             if (isOnline()) {
-                requestData(MONGOLAB_BASE_URL);
+                requestData(MONGOLAB_READING_URL);
             }else {
                 Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
             }
             return true;
-        }else if (id == R.id.exit_app ){
+        }else if(id == R.id.cooking){
+            if (isOnline()) {
+                requestData(MONGOLAB_COOKING_URL);
+            }else {
+                Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
+            }
+            return true;
+        }else if (id == R.id.swimming){
+            if (isOnline()) {
+                requestData(MONGOLAB_SWIMMING_URL);
+            }else {
+                Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
+            }
+            return true;
+        }else if(id == R.id.hiking) {
+            if (isOnline()) {
+                requestData(MONGOLAB_HIKING_URL);
+            } else {
+                Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
+            }
+            return true;
+        }else if(id == R.id.search) {
+            if (isOnline()) {
+                requestData(MONGOLAB_HIKING_URL);
+            } else {
+                Toast.makeText(this, "Network isn't available", Toast.LENGTH_LONG).show();
+            }
+            return true;
+        }
+        else if (id == R.id.exit_app ){
             finish();
             return true;
         }else if (id == R.id.map ) {
