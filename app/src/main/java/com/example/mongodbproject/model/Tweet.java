@@ -1,6 +1,7 @@
 package com.example.mongodbproject.model;
 
 import android.graphics.Bitmap;
+import com.google.android.gms.maps.model.LatLng;
 
 
 public class Tweet {
@@ -11,6 +12,8 @@ public class Tweet {
     private String created_at;
     private Bitmap profile_pic;
     private String user_screen_name;
+    private LatLng latLng;
+
 
 
 
@@ -53,5 +56,14 @@ public class Tweet {
 
     public void setUser_screen_name(String user_screen_name) {
         this.user_screen_name = user_screen_name;
+    }
+
+
+    public LatLng getLatLng() {
+        return latLng;
+    }
+
+    public void setLatLng(LatLng latLng) {
+        this.latLng = latLng;
     }
 }
